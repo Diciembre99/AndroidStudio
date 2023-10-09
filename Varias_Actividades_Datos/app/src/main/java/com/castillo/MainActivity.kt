@@ -15,12 +15,16 @@ class MainActivity : AppCompatActivity() {
 
         binding.boton.setOnClickListener{
             goWindow2()
+
         }
     }
 
     private fun goWindow2() {
         var miIntent: Intent = Intent(this,WindowsDataCollect::class.java)
+        miIntent.putExtra("nombre",binding.cajaNombre.text.toString())
+        miIntent.putExtra("edad",binding.cajaEdad.text.toString())
         startActivity(miIntent)
+
     }
 
 }
