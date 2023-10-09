@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ControlesEventosIdiomas</string>
+    <string name="botonIzquierda">Izquierdo</string>
+    <string name="botonDerecho">Derecho</string>
+    <string name="BotonCentro">Centro</string>
+    <string name="labelCentral">"!Hoy es viernes"</string>
+
+</resources>

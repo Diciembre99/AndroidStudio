@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="twTitulo">CALCULADORA</string>
+    <string name="tvSuma">NUMERO 1</string>
+    <string name="tvResta">NUMERO 2</string>
+    <string name="tvResultado">RESULTADO</string>
+    <string name="Resto">RESTO</string>
+</resources>

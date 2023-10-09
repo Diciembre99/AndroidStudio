@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3BF6F6F6"
+    android:backgroundTint="#5C272020"
+    android:backgroundTintMode="src_over"
+    android:hapticFeedbackEnabled="false"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="974dp"
+        android:layout_height="841dp"
+        android:scaleType="centerCrop"
+        android:tint="#94000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/espacio" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbRocoso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rocosos"
+            android:textColor="#F6F6F6" />
+
+        <RadioButton
+            android:id="@+id/rbGigantesGas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gigante Gaseoso"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/rbGigantesHel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gigantes Helados"
+            android:textColor="#FAF9F9" />
+
+    </RadioGroup>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="706dp" />
+
+    <Button
+        android:id="@+id/btnTierra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:backgroundTint="#572B2B"
+        android:text="Tierra"
+        android:textColor="#F1E6E6"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVenus" />
+
+    <Button
+        android:id="@+id/btnVenus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="2dp"
+        android:backgroundTint="#572B2B"
+        android:text="Venus"
+        android:textColor="#F1E6E6"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/btnMarte"
+        app:layout_constraintStart_toEndOf="@+id/btnMercurio"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/btnMercurio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:backgroundTint="#572B2B"
+        android:text="Mercurio"
+        android:textColor="#F1E6E6"
+        android:visibility="invisible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnVenus"
+        app:layout_constraintEnd_toStartOf="@+id/btnVenus"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnMarte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:backgroundTint="#572B2B"
+        android:text="Marte"
+        android:textColor="#F1E6E6"
+        android:visibility="invisible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnVenus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnVenus" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLANETAS"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <Button
+        android:id="@+id/btnJupiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:backgroundTint="#373D4E"
+        android:text="Jupiter"
+        android:textColor="#F1E6E6"
+        android:visibility="invisible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnMercurio"
+        app:layout_constraintStart_toStartOf="@+id/btnMercurio" />
+
+    <Button
+        android:id="@+id/btnSaturno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#373D4E"
+        android:text="Saturno"
+        android:textColor="#F1E6E6"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/btnMarte"
+        app:layout_constraintTop_toTopOf="@+id/btnMarte" />
+
+    <Button
+        android:id="@+id/btnNeptuno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00838F"
+        android:text="Neptuno"
+        android:textColor="#F1E6E6"
+        android:visibility="invisible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnSaturno"
+        app:layout_constraintEnd_toEndOf="@+id/btnSaturno" />
+
+    <Button
+        android:id="@+id/btnUrano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00838F"
+        android:text="Urano"
+        android:textColor="#F1E6E6"
+        android:visibility="invisible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnMercurio"
+        app:layout_constraintEnd_toEndOf="@+id/btnJupiter" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="0dp"
+        android:layout_height="187dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTierra" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
