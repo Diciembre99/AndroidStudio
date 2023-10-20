@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnResumen" type="id" />
+    <item name="divider3" type="id" />
+    <item name="btnValidar" type="id" />
+    <item name="btnReiniciar" type="id" />
+</resources>

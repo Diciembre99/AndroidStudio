@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="DuplicateIds">
+
+    <Button
+        android:id="@+id/btnResumen"
+        android:layout_width="73dp"
+        android:layout_height="34dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="RESUMEN"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3"
+        app:layout_constraintVertical_bias="0.419" />
+
+    <Button
+        android:id="@+id/btnValidar"
+        android:layout_width="82dp"
+        android:layout_height="35dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="VALIDAR"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3"
+        app:layout_constraintVertical_bias="0.421" />
+
+    <Button
+        android:id="@+id/btnReiniciar"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="6dp"
+        android:text="REINICIAR"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.337"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3"
+        app:layout_constraintVertical_bias="0.421" />
+
+    <Button
+        android:id="@+id/btnCuentas"
+        android:layout_width="76dp"
+        android:layout_height="34dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="CUENTAS"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875" />
+
+    <TextView
+        android:id="@+id/tvEncuestas"
+        android:layout_width="411dp"
+        android:layout_height="77dp"
+        android:background="#CF8080"
+        android:backgroundTint="#171E46"
+        android:paddingLeft="20dp"
+        android:paddingTop="25dp"
+        android:text="Encuestas"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck"
+        tools:layout_editor_absoluteX="-1dp" />
+
+    <Switch
+        android:id="@+id/swAnonimo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:text="Anonimo"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtNombre"
+        app:layout_constraintTop_toBottomOf="@+id/tvEncuestas"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nombre"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintEnd_toStartOf="@+id/txtNombre"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEncuestas"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="147dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintEnd_toStartOf="@+id/swAnonimo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/tvEncuestas"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <RadioGroup
+        android:id="@+id/panelRb"
+        android:layout_width="203dp"
+        android:layout_height="165dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2"
+        app:layout_constraintVertical_bias="0.681">
+
+        <RadioButton
+            android:id="@+id/rbMac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mac" />
+
+        <RadioButton
+            android:id="@+id/rbWindows"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Windows" />
+
+        <RadioButton
+            android:id="@+id/rbLinux"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Linux" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sistema Operativo preferido"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sistema Operativo preferido"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <CheckBox
+        android:id="@+id/cbDam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DAM"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.323" />
+
+    <CheckBox
+        android:id="@+id/cbDaw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DAW"
+        app:layout_constraintBottom_toBottomOf="@+id/divider3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.862" />
+
+    <CheckBox
+        android:id="@+id/cbAsir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ASIR"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.586" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Horas de estudio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="172dp"
+        android:layout_height="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvEncuestas"
+        app:layout_constraintVertical_bias="0.171" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvEncuestas"
+        app:layout_constraintVertical_bias="0.753" />
+
+    <TextView
+        android:id="@+id/tvNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3"
+        app:layout_constraintVertical_bias="0.139" />
+
+    <TextView
+        android:id="@+id/tvTexto"
+        android:layout_width="292dp"
+        android:layout_height="57dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

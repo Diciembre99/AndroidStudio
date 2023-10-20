@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Formulario2Activitys</string>
+    <string name="formulario">Formulario</string>
+    <string name="name">Name</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="dni">DNI</string>
+    <string name="gmail">Gmail</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="confirmacion_de_contrasena">Confirmación de contraseña</string>
+    <string name="registro">Registro</string>
+    <string name="tu_nombre">Tu nombre</string>
+    <string name="tu_apellido">Tu Apellido</string>
+    <string name="tu_dni">Tu DNI</string>
+    <string name="correo">ejemplo@hotmail.com</string>
+    <string name="contrasenia">contraseña</string>
+    <string name="contraseniaConfirmacion">contraseña</string>
+    <string name="regresar">Regresar</string>
+    <string name="informacion_del_usuario">Informacion del Usuario</string>
+</resources>

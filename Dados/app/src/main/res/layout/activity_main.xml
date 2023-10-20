@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BA8A8A"
+    android:backgroundTint="#02161E"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtRollsPlayer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="0"
+        android:textColor="#F3F3F3"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txtPointsPlayer1"
+        app:layout_constraintTop_toBottomOf="@+id/txtPointsPlayer1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="Tiradas"
+        android:textColor="#F3F3F3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnPlayer1"
+        app:layout_constraintStart_toStartOf="@+id/btnPlayer1"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Puntos"
+        android:textColor="#F3F3F3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/txtWinsPlayer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:text="0"
+        android:textColor="#F3F3F3"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="Ganadas"
+        android:textColor="#F3F3F3"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/txtPointsPlayer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        android:textColor="#F3F3F3"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txtWinsPlayer1"
+        app:layout_constraintTop_toBottomOf="@+id/txtWinsPlayer1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="Tiradas"
+        android:textColor="#F3F3F3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/txtWinsPlayer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="158dp"
+        android:layout_marginEnd="29dp"
+        android:text="0"
+        android:textColor="#F3F3F3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPointsPlayer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        android:textColor="#F3F3F3"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txtWinsPlayer2"
+        app:layout_constraintTop_toBottomOf="@+id/txtWinsPlayer2" />
+
+    <TextView
+        android:id="@+id/txtRollsPlayer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="29dp"
+        android:text="0"
+        android:textColor="#F3F3F3"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Puntos"
+        android:textColor="#F3F3F3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="29dp"
+        android:text="Ganadas"
+        android:textColor="#F3F3F3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtWinsPlayer2"
+        app:layout_constraintTop_toTopOf="@+id/txtWinsPlayer2" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:text="JUEGO DE DADOS"
+        android:textColor="#DABA58"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPlayer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:backgroundTint="#AEA721"
+        android:text="Jugador 2"
+        android:textColor="#2B2413"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnPlayer1"
+        app:layout_constraintTop_toBottomOf="@+id/txtRollsPlayer2" />
+
+    <Button
+        android:id="@+id/btnPlayer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="26dp"
+        android:backgroundTint="#AEA721"
+        android:text="Jugador 1"
+        android:textColor="#2B2413"
+        app:layout_constraintEnd_toStartOf="@+id/btnPlayer2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnPlayAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:backgroundTint="#064710"
+        android:text="Volver a Jugar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnRestar"
+        app:layout_constraintEnd_toEndOf="@+id/btnRestar" />
+
+    <Button
+        android:id="@+id/btnRestar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#931414"
+        android:text="Reiniciar Juego"
+        android:textColor="#F1F1F1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgDicePlayer1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgDicePlayer2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlayer1"
+        app:srcCompat="@drawable/dice" />
+
+    <ImageView
+        android:id="@+id/imgDicePlayer2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgDicePlayer1"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlayer2"
+        app:srcCompat="@drawable/dice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

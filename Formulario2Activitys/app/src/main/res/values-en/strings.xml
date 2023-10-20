@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Formulario2Activitys</string>
+    <string name="formulario">Form</string>
+    <string name="name">Name</string>
+    <string name="nombre">Name</string>
+    <string name="apellido">Last Name</string>
+    <string name="dni">ID Number</string>
+    <string name="gmail">Gmail</string>
+    <string name="contrasena">Password</string>
+    <string name="confirmacion_de_contrasena">Confirm Password</string>
+    <string name="registro">Register</string>
+    <string name="tu_nombre">Your Name</string>
+    <string name="tu_apellido">Your Last Name</string>
+    <string name="tu_dni">Your ID Number</string>
+    <string name="correo">example@hotmail.com</string>
+    <string name="contrasenia">Password</string>
+    <string name="contraseniaConfirmacion">Confirm Password</string>
+</resources>
